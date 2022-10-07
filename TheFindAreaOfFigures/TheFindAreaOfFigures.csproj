@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{862EBD3A-3B2E-4CFF-A33D-8F1B1674FFC2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TheFindAreaOfFigures</RootNamespace>
+    <AssemblyName>TheFindAreaOfFigures</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_cone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_cone.Designer.cs">
+      <DependentUpon>Form_cone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_equalteral_trap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_equalteral_trap.Designer.cs">
+      <DependentUpon>Form_equalteral_trap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_equalteral_triangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_equalteral_triangle.Designer.cs">
+      <DependentUpon>Form_equalteral_triangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Rectangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Rectangle.Designer.cs">
+      <DependentUpon>Form_Rectangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_rhombus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_rhombus.Designer.cs">
+      <DependentUpon>Form_rhombus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_right_triangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_right_triangle.Designer.cs">
+      <DependentUpon>Form_right_triangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_sphere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_sphere.Designer.cs">
+      <DependentUpon>Form_sphere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_square_rectangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_square_rectangle.Designer.cs">
+      <DependentUpon>Form_square_rectangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_sylinder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_sylinder.Designer.cs">
+      <DependentUpon>Form_sylinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_cone.resx">
+      <DependentUpon>Form_cone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_equalteral_trap.resx">
+      <DependentUpon>Form_equalteral_trap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_equalteral_triangle.resx">
+      <DependentUpon>Form_equalteral_triangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Rectangle.resx">
+      <DependentUpon>Form_Rectangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_rhombus.resx">
+      <DependentUpon>Form_rhombus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_right_triangle.resx">
+      <DependentUpon>Form_right_triangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_sphere.resx">
+      <DependentUpon>Form_sphere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_square_rectangle.resx">
+      <DependentUpon>Form_square_rectangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_sylinder.resx">
+      <DependentUpon>Form_sylinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equilateral-triangle.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимок1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\degree.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deg.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deg1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\de.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\equal.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Squared.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sq.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangle.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\romg.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\surbhi-isosceles-trapezoid-01-1620324478.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снasaимок.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снasasasимок.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cone-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снcone.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снcone1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\425px-Circular_cylinder_rh.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rhombus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sphere-1024x993-1024x993.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Снимsdsdsок.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deg2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61972.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\СнимоASASAк.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\СASAнимSDSDSок.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2873734.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
